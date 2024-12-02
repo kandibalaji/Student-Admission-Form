@@ -1,0 +1,24 @@
+<p>if works!</p>
+<!-- <h3 *ngIf="check" style="color:red;">coding hub</h3>
+<div *ngIf="isValid;else other_content"></div> -->
+<!-- <h3 *ngIf="isdisplay">coding hub</h3> -->
+  <h3  *ngFor="let name of names">{{name}}</h3>
+ <h2 *ngFor="let name of names;index as i">
+    value:{{x}}------->Index:{{i}}
+    </h2>
+ <h2 *ngFor="let name of names;even as e">
+    value:{{x}}------->Even Position:{{name}}
+ </h2>
+ <h2 *ngFor="let name of names;odd as o">
+    value:{{x}}------->Odd Position:{{name}}
+ </h2>
+  <h2 *ngFor="let name of emp|keyvalue">
+    {{x.key}}-------{{x.value|json}}
+ </h2> 
+ <!-- <h3 *ngFor="let data of emp">
+    {{data.id}}
+    {{data.name}}
+    {{data.age}}
+ </h3> -->
+ 
+ 

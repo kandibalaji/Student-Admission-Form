@@ -1,0 +1,9 @@
+<p>classbinding works!</p>
+<p class="textcolor">regular class</p>
+<p class="textsize">regular class</p>
+
+<p [class]="mytext">class binding</p>
+<!-- <p class="textcolor textsize"> regular multiple classes</p> -->
+<p [ngClass]="mygroup">class binding with groupwith ng class</p>
+<!-- <p [class]="isrequired?'textcolor':'textsize'">class binding with terinary operator</p> -->
+<p [class.textsize]="isrequired">class binding with.operator</p>

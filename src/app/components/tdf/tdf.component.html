@@ -1,0 +1,84 @@
+<!-- 
+<h3 style="color:red;text-align: center;font-weight: bold;margin-top: 10px;"> User Registration Form </h3>
+<div class="container mt-4">
+    <form #userForm="ngForm" (ngsubmit)="formData(userform)">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter User Name" [ngModel]
+                     name="username"  #uName="ngModel"  [class.is-invalid]="uName.invalid" required="uName">
+               <small class="text-danger" [class.d-none]="uName.valid || uName.untouched">username is required</small>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Email Id">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Phone Number">
+                </div>
+                <button class="btn btn-primary"> Register </button>
+            </div>
+
+            <div class="col-6">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="others">
+                    <label class="form-check-label" for="inlineRadio3">Others</label>
+                </div>
+                <div class="mt-4">
+                    <select class="form-select">
+                        <option selected>Please Select Course</option>
+                        <option *ngFor="let course of courses" value="{{course}}">{{course}}</option>
+                    </select>
+                </div>
+
+                <div class="form-check form-check-inline mt-4">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Remeber Me</label>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div> -->
+
+
+<div class="registration_form">
+    <form [formGroup]="registrationForm" (ngSubmit)="postData()">
+        <h3 style="color:red"> User Registration Form</h3>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" formControlName="userName"  placeholder="Enter your username">
+           
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" class="form-control" formControlName="password" placeholder="Enter password" >
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" class="form-control"  formControlName="cpassword"  placeholder="Enter confirm password" >
+        </div>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" formControlName="city" placeholder="Enter your city" >
+        </div>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" formControlName="state" placeholder="Enter your state" >
+        </div>
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" formControlName="pincode" placeholder="Enter your pincode" >
+        </div>
+
+        <button class="btn btn-primary" > Register</button>
+        <button class=" btn btn-danger" style="margin-left: 5px;"> Display</button>
+    </form>
+</div>
+<div style="color:red;text-align: center;" class="mt-5">
+    {{ registrationForm.value | json}}
+</div>
+
+
+

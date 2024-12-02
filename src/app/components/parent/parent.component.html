@@ -1,0 +1,17 @@
+{{res}}
+message={{msg}}
+<button class="btn btn-primary" (click)="updatemsg()" >click</button>
+
+<hr/>
+<app-child [studentData]="sData"></app-child>
+<app-child [pMan]="msg"  (pass)="res = $event">
+    <h1 #head>coding hub</h1>
+    <h1 #head>coding hub</h1>
+    <h1 #head>coding hub</h1>
+    <h1 #head>coding hub</h1>
+    <h1 #head>coding hub</h1>
+    <h1 #head>coding hub</h1>
+
+</app-child> 
+<!-- <app-child [pMan]="msg"   (pass)="receiveMsg($event)"></app-child> -->
+ 

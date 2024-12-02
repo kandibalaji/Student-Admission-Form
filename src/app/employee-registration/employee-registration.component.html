@@ -1,0 +1,32 @@
+
+<html>
+    
+<div class="jumbotron">
+    <h1>Employee-Registration</h1>
+  </div>
+   <form [formGroup]="employeeRegistrationForm">
+       <div class="form-group">
+          <label for="id">Id:</label>
+          <input type="number" formControlName="id" class="form-control">
+      </div> 
+      <!-- <div class="form-group">
+          <label for="name">name:</label>
+          <input type="text" formControlName="name" class="form-control">
+      </div>  -->
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" formControlName="email" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="text" formControlName="password" class="form-control">
+      </div>
+      
+  
+      <br>
+      <input type="button" value="Register" class="btn btn-success" (click)="fnAddEmployee()">&nbsp;
+      <!-- <input type="button" value="Update" class="btn btn-warning" (click)="fnUpdateStudent()">&nbsp;-->
+      <input type="button" value="Delete" class="btn btn-danger" (click)="fnDeleteEmployee()">&nbsp; 
+  </form>
+
+</html>

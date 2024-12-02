@@ -1,0 +1,100 @@
+/* General container styling for the registration form */
+.jumbotron {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    background-color: #007bff;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    border: 3px solid #0056b3;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  /* Styling for the form container */
+  form {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f4f8fb;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* ID input field styling */
+  input[type="number"][formControlName="id"] {
+    background-color: #e6f7ff;    /* Light blue background */
+    color: #003366;               /* Dark blue text */
+    border: 2px solid #66ccff;    /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  input[type="text"][formControlName="email"],
+  input[type="text"][formControlName="password"] {
+    background-color: #f2f2f2;    /* Light gray background */
+    color: #333;                  /* Dark gray text */
+    border: 2px solid #ccc;       /* Gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  /* Styling for input buttons */
+  input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  input[type="button"].btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  input[type="button"].btn-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  input[type="button"].btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  input[type="button"]:active {
+    transform: scale(0.98);
+  }
+  
+  br {
+    margin-bottom: 20px;
+  }
+  
