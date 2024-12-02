@@ -1,0 +1,109 @@
+<!-- <form [formGroup]="studentForm">
+    Id:<input type="number" name="" id="" formControlName="id" class="form-control">
+    Surname:<input type="text" name="" id="" formControlName="surname" class="form-control">
+    Name:<input type="text" name="" id="" formControlName="name" class="form-control">
+    Fathername:<input type="text" name="" id="" formControlName="fathername" class="form-control">
+    Dob:<input type="text" name="" id="" formControlName="dob" class="form-control">
+    <br>
+    <input type="button" value="Add" class="btn btn-success" (click)="fnAddStudent()">&nbsp;
+    <input type="button" value="Update" class="btn btn-warning" (click)="fnUpdateStudent()">&nbsp;
+    <input type="button" value="Delete" class="btn btn-danger"(click)="fnDeleteStudent()">&nbsp;
+    
+</form> -->
+
+
+    
+<!-- <div class="jumbotron">
+    <h1>STUDENT ADMISSION FORM</h1>
+    <div class="row">
+        <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+  </div>
+   <form [formGroup]="studentForm">
+      <div class="form-group">
+          <label for="id">Id:</label>
+          <input type="number" formControlName="id" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" formControlName="surname" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" formControlName="name" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="fathername">Fathername:</label>
+          <input type="text" formControlName="fathername" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="dob">Dob:</label>
+          <input type="text" formControlName="dob" class="form-control">
+      </div>
+  
+      <br>
+      <input type="button" value="Add" class="btn btn-success" (click)="fnAddStudent()">&nbsp;
+      <input type="button" value="Update" class="btn btn-warning" (click)="fnUpdateStudent()">&nbsp;
+      <input type="button" value="Delete" class="btn btn-danger" (click)="fnDeleteStudent()">&nbsp;
+  </form> -->
+
+
+  <div class="jumbotron text-center">
+    <h1 class="form-heading">STUDENT ADMISSION FORM</h1>
+  </div>
+  
+  <!-- Form with form-group for alignment -->
+  <form [formGroup]="studentForm" class="container form-container">
+    <!-- Id Field -->
+    <div class="form-group row">
+      <label for="id" class="col-md-4 col-form-label label-bold">Id:</label>
+      <div class="col-md-8">
+        <input type="number" formControlName="id" class="form-control">
+      </div>
+    </div>
+  
+    <!-- Surname Field -->
+    <div class="form-group row">
+      <label for="surname" class="col-md-4 col-form-label label-bold">Surname:</label>
+      <div class="col-md-8">
+        <input type="text" formControlName="surname" class="form-control">
+      </div>
+    </div>
+  
+    <!-- Name Field -->
+    <div class="form-group row">
+      <label for="name" class="col-md-4 col-form-label label-bold">Name:</label>
+      <div class="col-md-8">
+        <input type="text" formControlName="name" class="form-control">
+      </div>
+    </div>
+  
+    <!-- Father Name Field -->
+    <div class="form-group row">
+      <label for="fathername" class="col-md-4 col-form-label label-bold">Fathername:</label>
+      <div class="col-md-8">
+        <input type="text" formControlName="fathername" class="form-control">
+      </div>
+    </div>
+  
+    <!-- Date of Birth Field -->
+    <div class="form-group row">
+      <label for="dob" class="col-md-4 col-form-label label-bold">Dob:</label>
+      <div class="col-md-8">
+        <input type="text" formControlName="dob" class="form-control">
+      </div>
+    </div>
+  
+    <!-- Action Buttons -->
+    <div class="form-group row text-center">
+      <div class="col-md-12">
+        <input type="button" value="Add" class="btn btn-success" (click)="fnAddStudent()">&nbsp;
+        <input type="button" value="Update" class="btn btn-warning" (click)="fnUpdateStudent()">&nbsp;
+        <input type="button" value="Delete" class="btn btn-danger" (click)="fnDeleteStudent()">
+      </div>
+    </div>
+  </form>
+  

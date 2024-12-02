@@ -1,0 +1,166 @@
+
+
+/* Styles for the jumbotron */
+.jumbotron {
+  background-color: #17a2b8;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+/* Layout for the customer form */
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* The container of the form */
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Form Styles */
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* White with some opacity to make the background image visible */
+  background-image: url('/assets/student/school4.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center,fixed;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Style for form controls */
+input[type="number"],
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="button"]:hover {
+  opacity: 0.8;
+}
+
+/* Button colors */
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .col-md-4 {
+      flex: 1;
+      max-width: 100%;
+  }
+
+  form {
+      width: 90%;
+  }
+}
+
+/* Style for form labels */
+form label {
+  font-weight: bold; /* Makes the label text bold */
+  color: white; /* Changes the text color to white */
+}
+
+/* Ensure consistent font size for the heading */
+.form-heading {
+  font-size: 40px;            /* Fixed font size for the heading */
+  font-weight: bold;          /* Bold heading text */
+  color: #007bff;             /* Blue color for the heading */
+  margin-bottom: 0;           /* Removed space below the heading */
+}
+
+/* Form container with fixed width */
+.form-container {
+  max-width: 600px;           /* Fixed width for the form */
+  margin: 0 auto;             /* Center the form horizontally */
+  padding: 20px;              /* Add padding to the form */
+  border-radius: 8px;         /* Rounded corners for the form */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  margin-top: 10px;           /* Added small space between the title and the form */
+}
+
+/* Bold and specific font size for labels */
+.label-bold {
+  font-weight: bold;          /* Bold text */
+  font-size: 16px;            /* Fixed font size for labels */
+  color: #333;                /* Dark text color */
+}
+
+/* Adjusting the font size and padding for form controls */
+.form-control {
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Adjusting the spacing between form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Adjusting the size of action buttons */
+input[type="button"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+/* Hover effects for buttons */
+input[type="button"]:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Styling for the form heading in the jumbotron */
+.jumbotron {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;            /* Reduced padding for smaller spacing */
+  margin-bottom: 0;           /* Remove extra space after the heading */
+}
+
+.jumbotron h1 {
+  font-size: 40px;
+  color: #007bff;
+}
+
+
